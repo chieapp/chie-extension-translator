@@ -1,0 +1,18 @@
+{
+  "name": "chie-extension-translator",
+  "private": true,
+  "displayName": "Translator Service",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "18.x",
+    "chie": "^0.2.0",
+    "typescript": "5.0.2"
+  },
+  "dependencies": {
+    "language-name-map": "^0.3.0"
+  }
+}

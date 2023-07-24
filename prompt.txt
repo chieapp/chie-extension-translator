@@ -1,0 +1,3 @@
+Translate following text to {{lang}}, only reply with translated text:
+
+{{text}}
