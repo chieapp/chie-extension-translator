@@ -1,6 +1,6 @@
 import gui from 'gui';
 import path from 'node:path';
-import {BaseView, BaseChatService} from 'chie';
+import {BaseView, BaseChatService, assistantManager} from 'chie';
 
 import {getUserLanguages} from './languages';
 
@@ -89,6 +89,8 @@ export default class TranslatorView extends BaseView<BaseChatService> {
     this.spinner.setVisible(true);
     this.service.setParam('lang', this.selector.getText());
     this.service.sendMessage({content: this.input.getText()});
+    // Save selected lang param.
+    assistantManager.saveConfig();
   }
 
   end() {
